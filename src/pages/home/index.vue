@@ -1,12 +1,7 @@
 <template>
   <div>
-    <!-- 搜索栏 -->
-    <div class="search">
-      <div class="search-item">
-        <icon type="search"/>
-        <span>搜索</span>
-      </div>
-    </div>
+    <!-- 搜索框 -->
+    <search-bar></search-bar>
     <!-- 轮播图 -->
     <swiper indicator-dots="true">
       <swiper-item v-for="(item,index) in swiperData" :key="index">
@@ -41,7 +36,8 @@
 </template>
 <script>
 import request from "../../utils/request";
-import "./main.less";
+import searchBar from "../../components/searchBar.vue";
+
 export default {
   data() {
     return {
@@ -50,6 +46,9 @@ export default {
       floorData: [],
       flag: false
     };
+  },
+  components: {
+    "search-bar": searchBar
   },
   computed: {
     floornewData() {
@@ -88,5 +87,6 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style lang="less" scoped>
+@import "./main.less";
 </style>

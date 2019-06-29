@@ -3,6 +3,7 @@
     "pages/home/main",
     "pages/cart/main",
     "pages/cate/main",
+    "pages/search/main",
     "pages/my/main"  ],
   "window": {
     "backgroundTextStyle": "light",
