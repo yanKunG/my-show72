@@ -37,7 +37,7 @@ export default {
       keyword: "",
       resultList: [],
       timer: null,
-      historyKey: mpvue.getStorageSync("") || []
+      historyKey: mpvue.getStorageSync("history") || []
     };
   },
   methods: {

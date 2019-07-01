@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -46,6 +46,28 @@
 					"id": -1,
 					"name": "商品列表",
 					"pathName": "pages/cate/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "搜索列表",
+					"pathName": "pages/search-list/main",
+					"query": "key=电脑",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商品详情",
+					"pathName": "pages/goods_detail/main",
+					"query": "key=778",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "购物车",
+					"pathName": "pages/cart/main",
+					"query": "",
 					"scene": null
 				}
 			]
