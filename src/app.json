@@ -6,6 +6,7 @@
     "pages/search/main",
     "pages/search-list/main",
     "pages/goods_detail/main",
+    "pages/auth/main",
     "pages/my/main"  ],
   "window": {
     "backgroundTextStyle": "light",

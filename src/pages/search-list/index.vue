@@ -9,7 +9,7 @@
     </div>
     <!-- Tab效果 -->
     <div class="tabs">
-      <div :key='index' :class='{active: currentIndex===index}' v-for='(item, index) in tabs' class="tab-item">
+      <div :key='index' :class='{active: currentIndex===index}' v-for='(item, index) in tabs' @click="tab(index)" class="tab-item">
         {{item}}
       </div>
     </div>
@@ -36,7 +36,7 @@ export default {
     data() {
         return {
             key:'',
-            currentIndex:0,
+            currentIndex:1,
             tabs:['综合', '销量', '价格'],
             pagenum:1,
             pagesize:10,
@@ -47,6 +47,9 @@ export default {
         }
     },
     methods:{
+        tab(id){
+          this.currentIndex = id
+        },
         async init(){
             if(this.hasMore){
                 return
